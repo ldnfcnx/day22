@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>
+    <script>
+    var arr = [43, 54, 4, -4, 84, 100, 58, 27, 140];
+        arr.sort(function(a,b){return a-b;})
+        console.log(arr.join());
+    
+    var arr2 = ['apple', 'dog', 'cat', 'car', 'zoo', 'orange', 'airplane'];
+        arr2.sort();
+        console.log(arr2.join());
+        arr2.sort(function(){return 1;});
+        console.log(arr2.join());
+
+    var arr3 = [[10, 14], [16, 60], [7, 44], [26, 35], [22, 63]];
+        arr3.sort(function(a,b){
+            return b[1]-a[1];
+        });
+        console.log(arr3);
+
+    var arr4 = [
+    {
+        id: 1,
+        name: 'candy',
+        value: 40
+    }, {
+        id: 2,
+        name: 'Simon',
+        value: 50
+    }, {
+        id: 3,
+        name: 'Tony',
+        value: 45
+    }, {
+        id: 4,
+        name: 'Annie',
+        value: 60
+    }
+    ];
+       arr4.sort(function(a,b){
+           return a.value-b.value;
+       });
+       console.log(arr4);
+
+    </script>
+</body>
+</html>
